@@ -29,11 +29,11 @@ except AttributeError:
 
 NAME = 'oasys-barc4ro'
 
-VERSION = '2023.09.05'
+VERSION = '2024.12.20'
 ISRELEASED = False
 
 DESCRIPTION = 'X-ray Refractive Optics Library for Physical Optics'
-README_FILE = os.path.join(os.path.dirname(__file__), 'README.txt')
+README_FILE = os.path.join(os.path.dirname(__file__), 'README.rst')
 LONG_DESCRIPTION = open(README_FILE).read()
 AUTHOR = 'Rafael Celestre, Luca Rebuffi'
 AUTHOR_EMAIL = 'rafael.celestre@esrf.fr'
@@ -67,7 +67,8 @@ CLASSIFIERS = (
 )
 
 INSTALL_REQUIRES = (
-    'oasys-srwpy>=1.0.3',
+    'scipy',
+    # 'oasys-srwpy>=1.0.3',
 )
 
 SETUP_REQUIRES = (
